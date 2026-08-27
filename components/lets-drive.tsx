@@ -7,7 +7,6 @@ import Reveal from "@/components/ui/reveal";
 import MagneticButton from "@/components/ui/magnetic-button";
 import AccordionItem from "@/components/ui/accordion-item";
 import TiltCard from "@/components/ui/tilt-card";
-import { useToast } from "@/components/ui/toast";
 
 const ACCORDION_ITEMS = [
   {
@@ -33,7 +32,6 @@ export default function LetsDrive() {
   const imageCardRef = useRef<HTMLDivElement>(null);
   const [openIndex, setOpenIndex] = useState(2);
   const [modalOpen, setModalOpen] = useState(false);
-  const { showToast } = useToast();
 
   useEffect(() => {
     const ctx = gsap.context(() => {
