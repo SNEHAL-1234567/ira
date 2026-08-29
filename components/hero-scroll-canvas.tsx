@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-const FRAME_COUNT = 192;
+const FRAME_COUNT = 240;
 const getFrameSrc = (index: number) =>
   `/hero-scroll/ezgif-frame-${String(index + 1).padStart(3, "0")}.jpg`;
 
