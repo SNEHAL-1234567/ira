@@ -10,35 +10,35 @@ import { useToast } from "@/components/ui/toast";
 
 const BLOG_CARDS = [
   {
-    image: "/lotus-images/lotus-pool-dusk-2.jpg",
-    title: "Sunset Swims at the Pool",
-    date: "Golden Hour",
+    image: "/ira-images/ira-pool-rain.jpg",
+    title: "Poolside in the Rain",
+    date: "Monsoon Magic",
     category: "Pool",
   },
   {
-    image: "/lotus-images/lotus-pool-dusk-1.jpg",
-    title: "Evenings by the Bonfire",
-    date: "After Dark",
-    category: "Bonfire",
+    image: "/ira-images/ira-thatched-hut.jpg",
+    title: "The Thatched Cottage",
+    date: "Farm Mornings",
+    category: "Farmstay",
   },
   {
-    image: "/lotus-images/lotus-exterior-day.jpg",
-    title: "Mornings in the Garden",
-    date: "Sunrise",
-    category: "Garden",
+    image: "/ira-images/ira-decor-forever.jpg",
+    title: "Moments You'll Hold Onto",
+    date: "Forever",
+    category: "Decor",
   },
 ];
 
 const MOSAIC = [
-  "/lotus-images/lotus-pool-day.jpg",
-  "/lotus-images/lotus-aerial-dusk.jpg",
-  "/lotus-images/lotus-aerial-tilt.jpg",
+  "/ira-images/ira-decor-finesse.jpg",
+  "/ira-images/ira-aerial.jpg",
+  "/ira-images/ira-capacity-400.jpg",
 ];
 
 const FEATURED = {
-  image: "/lotus-images/lotus-pool-dusk-2.jpg",
-  title: "Your Escape Begins Here",
-  date: "Lotus Castle",
+  image: "/ira-images/ira-exterior-day.jpg",
+  title: "Your Celebration Begins Here",
+  date: "IRA Luxury Farmstay",
 };
 
 export default function AdventuresGallery() {
@@ -75,13 +75,13 @@ export default function AdventuresGallery() {
   };
 
   const handleAllBlogs = () => {
-    showToast("Loading more photos of Lotus Castle…", "info", "📸");
+    showToast("Loading more photos of IRA…", "info", "📸");
   };
 
   const handleStartTrip = () => {
     window.open(
-      "https://wa.me/919160037604?text=" +
-        encodeURIComponent("Hi! I'd like to check availability at Lotus Castle."),
+      "https://wa.me/919347567338?text=" +
+        encodeURIComponent("Hi! I'd like to check availability at IRA Luxury Farmstay."),
       "_blank"
     );
   };
@@ -96,7 +96,7 @@ export default function AdventuresGallery() {
               <h2 className="font-display text-2xl font-bold leading-tight md:text-3xl">
                 Glimpses of
                 <br />
-                Lotus Castle
+                IRA
               </h2>
             </Reveal>
             <MagneticButton
@@ -177,7 +177,7 @@ export default function AdventuresGallery() {
             <TiltCard className="group relative row-span-2 aspect-[4/5] overflow-hidden rounded-2xl md:rounded-3xl">
               <Image
                 src={MOSAIC[0]}
-                alt="Lotus Castle pool by day"
+                alt="Wedding decor at IRA Luxury Farmstay"
                 fill
                 sizes="50vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -186,7 +186,7 @@ export default function AdventuresGallery() {
             <TiltCard className="group relative aspect-[4/3] overflow-hidden rounded-2xl md:rounded-3xl">
               <Image
                 src={MOSAIC[1]}
-                alt="Lotus Castle aerial view at dusk"
+                alt="Aerial view of IRA Luxury Farmstay"
                 fill
                 sizes="25vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -195,7 +195,7 @@ export default function AdventuresGallery() {
             <TiltCard className="group relative aspect-[4/3] overflow-hidden rounded-2xl md:rounded-3xl">
               <Image
                 src={MOSAIC[2]}
-                alt="Lotus Castle exterior"
+                alt="Event lawn at IRA Luxury Farmstay"
                 fill
                 sizes="25vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -206,11 +206,11 @@ export default function AdventuresGallery() {
           <Reveal className="mt-6 md:mt-8">
             <p className="text-sm font-medium text-accent-green">Ready?</p>
             <h3 className="mt-2 font-display text-xl font-bold md:text-3xl">
-              Book Your Stay at Lotus Castle Today
+              Book Your Celebration at IRA Today
             </h3>
             <p className="mt-3 max-w-md text-sm leading-relaxed text-text-muted md:mt-4">
-              A private pool, bonfire nights, and spacious rooms — everything
-              set up for a weekend getaway with the people you love.
+              Grand lawns, thoughtful decor, and a peaceful farm setting —
+              everything set up for your next celebration.
             </p>
             <MagneticButton
               onClick={handleStartTrip}

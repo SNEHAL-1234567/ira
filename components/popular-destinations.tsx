@@ -13,28 +13,28 @@ const DESTINATIONS = [
     to: "Private Pool",
     date: "Open all day",
     price: "Enquire for pricing",
-    image: "/lotus-images/lotus-pool-dusk-2.jpg",
+    image: "/ira-images/ira-pool-rain.jpg",
   },
   {
     from: "Outdoor",
-    to: "Bonfire Deck",
-    date: "Evenings & nights",
+    to: "Event Lawn",
+    date: "Room for 400 guests",
     price: "Enquire for pricing",
-    image: "/lotus-images/lotus-pool-dusk-1.jpg",
+    image: "/ira-images/ira-capacity-400.jpg",
   },
   {
-    from: "Indoor",
-    to: "4 Bedrooms",
-    date: "Sleeps the whole group",
+    from: "Farm",
+    to: "Thatched Cottage",
+    date: "Cozy year-round",
     price: "Enquire for pricing",
-    image: "/lotus-images/lotus-exterior-day.jpg",
+    image: "/ira-images/ira-thatched-hut.jpg",
   },
   {
     from: "Outdoor",
-    to: "Garden & Lawn",
-    date: "Perfect for events",
+    to: "Mandap & Decor",
+    date: "Perfect for weddings",
     price: "Enquire for pricing",
-    image: "/lotus-images/lotus-pool-day.jpg",
+    image: "/ira-images/ira-decor-forever.jpg",
   },
 ];
 
@@ -96,7 +96,7 @@ export default function PopularDestinations() {
   }, []);
 
   const handleDestinationClick = (dest: (typeof DESTINATIONS)[0]) => {
-    showToast(`Ask us about the ${dest.to} — call 9160037604`, "info", "🏡");
+    showToast(`Ask us about the ${dest.to} — call 9347567338`, "info", "🏡");
   };
 
   return (

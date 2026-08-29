@@ -42,7 +42,7 @@ export default function Preloader({
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="font-display text-2xl font-bold tracking-tight text-white"
             >
-              Lotus Castle
+              IRA
             </motion.span>
           </motion.div>
         )}

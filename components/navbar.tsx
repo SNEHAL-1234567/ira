@@ -83,14 +83,14 @@ export default function Navbar() {
 
   const handleLogin = () => {
     setMenuOpen(false);
-    window.open("tel:+919160037604", "_self");
+    window.open("tel:+919347567338", "_self");
   };
 
   const handleSignup = () => {
     setMenuOpen(false);
     window.open(
-      "https://wa.me/919160037604?text=" +
-        encodeURIComponent("Hi! I'd like to check availability at Lotus Castle."),
+      "https://wa.me/919347567338?text=" +
+        encodeURIComponent("Hi! I'd like to enquire about hosting at IRA Luxury Farmstay."),
       "_blank"
     );
   };
@@ -125,7 +125,7 @@ export default function Navbar() {
         <span
           className={`font-display text-xl font-bold tracking-tight transition-colors duration-300 ${textColor}`}
         >
-          Lotus Castle
+          IRA
         </span>
       </button>
 

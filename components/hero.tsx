@@ -81,8 +81,8 @@ export default function Hero() {
     return () => ctx.revert();
   }, []);
 
-  const headingLine1 = "Lotus Castle,";
-  const headingLine2 = "Your Private Escape.";
+  const headingLine1 = "IRA Luxury Farmstay,";
+  const headingLine2 = "Where Peace Finds Its Home.";
 
   return (
     <section
@@ -104,7 +104,7 @@ export default function Hero() {
             className="mb-4 flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-xs font-medium text-text-primary shadow-floating md:mb-6 md:text-sm"
           >
             <span className="text-accent-green">✦</span>
-            Luxury Farmhouse · Weekend Retreat
+            Unrestrained · Unforgettable · Unhurried
           </div>
 
           <h1
@@ -131,9 +131,9 @@ export default function Hero() {
             ref={subRef}
             className="mt-3 max-w-[560px] text-sm leading-relaxed text-white/80 md:mt-4 md:text-base"
           >
-            A luxury farmhouse in Moinabad, Hyderabad with a private pool,
-            bonfire deck and 4 bedrooms — the perfect weekend getaway with
-            friends and family.
+            Thoughtfully designed spaces for weddings, family gatherings and
+            celebrations of every kind — set on a private farm in Chevella,
+            just outside Hyderabad.
           </p>
         </div>
       </div>

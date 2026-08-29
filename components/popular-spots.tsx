@@ -10,40 +10,40 @@ import { useToast } from "@/components/ui/toast";
 
 const SPOTS = [
   {
-    key: "pool",
-    image: "/lotus-images/lotus-pool-dusk-2.jpg",
+    key: "lawn",
+    image: "/ira-images/ira-capacity-400.jpg",
     tag: "Featured",
-    title: "Poolside Deck",
-    location: "Moinabad, Hyderabad",
+    title: "Event Lawn for 400",
+    location: "Chevella, Hyderabad",
     duration: "Full Day",
     price: null,
     showPrice: false,
     span: "md:col-span-2 md:row-span-2" as const,
-    emoji: "🏊",
+    emoji: "🌾",
   },
   {
-    key: "bonfire",
-    image: "/lotus-images/lotus-pool-dusk-1.jpg",
-    tag: "Evenings",
-    title: "Bonfire Lounge",
-    location: "Moinabad, Hyderabad",
+    key: "pool",
+    image: "/ira-images/ira-pool-rain.jpg",
+    tag: "Anytime",
+    title: "Poolside",
+    location: "Chevella, Hyderabad",
     duration: null,
     price: null,
     showPrice: false,
     span: "md:col-start-3 md:row-start-1" as const,
-    emoji: "🔥",
+    emoji: "🏊",
   },
   {
-    key: "garden",
-    image: "/lotus-images/lotus-exterior-day.jpg",
-    tag: "Farmhouse",
-    title: "Garden & Exterior",
-    location: "Moinabad, Hyderabad",
+    key: "cottage",
+    image: "/ira-images/ira-thatched-hut.jpg",
+    tag: "Farmstay",
+    title: "Thatched Cottage",
+    location: "Chevella, Hyderabad",
     duration: null,
     price: null,
     showPrice: false,
     span: "md:col-start-3 md:row-start-2" as const,
-    emoji: "🌿",
+    emoji: "🏡",
   },
 ];
 
@@ -102,14 +102,14 @@ export default function PopularSpots() {
 
   const handleBookTrip = (spot: (typeof SPOTS)[0]) => {
     window.open(
-      "https://wa.me/919160037604?text=" +
-        encodeURIComponent(`Hi! I'd like to ask about the ${spot.title} at Lotus Castle.`),
+      "https://wa.me/919347567338?text=" +
+        encodeURIComponent(`Hi! I'd like to ask about the ${spot.title} at IRA Luxury Farmstay.`),
       "_blank"
     );
   };
 
   const handleSpotClick = (spot: (typeof SPOTS)[0]) => {
-    showToast(`${spot.title} at Lotus Castle, ${spot.location}`, "info", spot.emoji);
+    showToast(`${spot.title} at IRA, ${spot.location}`, "info", spot.emoji);
   };
 
   return (
@@ -123,14 +123,14 @@ export default function PopularSpots() {
             Featured Spaces
           </h2>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-text-muted md:text-base">
-            The corners of Lotus Castle our guests love most — from sunset
-            swims to fireside evenings.
+            The corners of IRA our guests love most — from grand event
+            lawns to quiet poolside evenings.
           </p>
         </Reveal>
 
         <MagneticButton
           onClick={() =>
-            showToast("Browse more photos of Lotus Castle below…", "info", "🗺️")
+            showToast("Browse more photos of IRA below…", "info", "🗺️")
           }
           className="shrink-0 border border-border-subtle px-5 py-2.5 text-xs font-semibold md:px-6 md:py-3 md:text-sm"
         >

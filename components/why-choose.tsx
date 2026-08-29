@@ -6,9 +6,9 @@ import Reveal from "@/components/ui/reveal";
 import TiltCard from "@/components/ui/tilt-card";
 
 const STATS = [
-  { value: 4, suffix: "", label: "Private Bedrooms" },
-  { value: 1, suffix: "", label: "Private Swimming Pool" },
-  { value: 24, suffix: "/7", label: "Security & Caretaker Support" },
+  { value: 400, suffix: "", label: "Guest Capacity for Events" },
+  { value: 3, suffix: "", label: "Signature Spaces" },
+  { value: 1, suffix: "", label: "Private Pool & Farm" },
 ];
 
 const FEATURES = [
@@ -23,8 +23,8 @@ const FEATURES = [
         />
       </svg>
     ),
-    title: "Private Pool & Garden",
-    text: "A private pool, lush lawns, and garden spaces made for relaxing, photos, and play.",
+    title: "Grand Event Lawns",
+    text: "Sprawling lawns built to host celebrations for up to 400 guests.",
   },
   {
     icon: (
@@ -33,8 +33,8 @@ const FEATURES = [
         <path d="M3 9.5h18M8 3v4M16 3v4" stroke="#0B0F0D" strokeWidth="1.6" strokeLinecap="round" />
       </svg>
     ),
-    title: "Kitchen & BBQ Setup",
-    text: "A fully-equipped kitchen and BBQ area so your group can cook up a feast together.",
+    title: "Thoughtful Decor & Styling",
+    text: "Every mandap and setting shaped with finesse, tailored to your celebration.",
   },
   {
     icon: (
@@ -48,7 +48,7 @@ const FEATURES = [
       </svg>
     ),
     title: "24/7 Support",
-    text: "CCTV security and a caretaker on-site, with real people reachable any time you need us.",
+    text: "Real people, reachable any time you need us — from first enquiry to the big day.",
   },
 ];
 
@@ -159,14 +159,14 @@ export default function WhyChoose() {
         <Reveal>
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-border-subtle bg-white/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-text-primary shadow-sm backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-accent-green" />
-            Why Lotus Castle
+            Why IRA
           </div>
 
           <h2 className="font-display text-3xl font-bold leading-[1.05] tracking-tight text-balance md:text-4xl lg:text-[3rem]">
             Why Guests Choose{" "}
             <span className="relative inline-block whitespace-nowrap">
               <span className="relative z-10 bg-gradient-to-r from-accent-green to-[#7FE000] bg-clip-text text-transparent">
-                Lotus Castle
+                IRA
               </span>
               <svg
                 aria-hidden
@@ -184,20 +184,19 @@ export default function WhyChoose() {
                 />
               </svg>
             </span>{" "}
-            for Their Weekend Getaway
+            for Their Celebration
           </h2>
 
           <p className="mt-6 max-w-lg text-sm leading-relaxed text-text-muted md:text-base">
-            From the private pool to bonfire nights, we make your farmhouse
-            getaway easy, safe, and memorable — with everything set up and
-            ready when you arrive.
+            From grand event lawns to thoughtfully styled decor, we make
+            your celebration unrestrained, unforgettable, unhurried.
           </p>
 
           <div className="mt-7 flex items-center gap-3">
             {SOCIALS.map((s) => (
               <a
                 key={s.label}
-                href={s.label === "Instagram" ? "https://www.instagram.com/lotuscastle9" : "#"}
+                href={s.label === "Instagram" ? "https://www.instagram.com/irafarmstay" : "#"}
                 target={s.label === "Instagram" ? "_blank" : undefined}
                 rel={s.label === "Instagram" ? "noopener noreferrer" : undefined}
                 aria-label={s.label}

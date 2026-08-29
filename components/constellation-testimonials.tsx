@@ -24,9 +24,9 @@ const TESTIMONIALS: Testimonial[] = [
   {
     id: 1,
     name: "Ananya Reddy",
-    role: "Family Weekend · Lotus Castle",
+    role: "Wedding Reception · IRA",
     quote:
-      "The kids didn't want to leave the pool! Lotus Castle made our family weekend truly special.",
+      "Our wedding reception was flawless — IRA's team handled every detail with such finesse.",
     photo: "/review/20303b5f6f2cf43506bb6d88e4ad0d93.jpg",
     x: -330,
     y: -110,
@@ -36,9 +36,9 @@ const TESTIMONIALS: Testimonial[] = [
   {
     id: 2,
     name: "Rahul Varma",
-    role: "Birthday Celebration · Lotus Castle",
+    role: "Birthday Celebration · IRA",
     quote:
-      "We hosted my birthday bonfire here and it was magical — the team took care of everything.",
+      "We hosted my birthday here with 200 guests and it was unforgettable — exactly as promised.",
     photo: "/review/355ed0f15a82c42abe7e51bba1d34606.jpg",
     x: -110,
     y: -170,
@@ -48,9 +48,9 @@ const TESTIMONIALS: Testimonial[] = [
   {
     id: 3,
     name: "Sneha Iyer",
-    role: "Friends Getaway · Lotus Castle",
+    role: "Sangeet Night · IRA",
     quote:
-      "A perfect escape from the city. The pool and garden are stunning, especially at sunset.",
+      "The lawns and decor made our sangeet night absolutely magical.",
     photo: "/review/39202174545c29bfbdb0bb981ed6e766.jpg",
     x: 150,
     y: -155,
@@ -60,9 +60,9 @@ const TESTIMONIALS: Testimonial[] = [
   {
     id: 4,
     name: "Kiran Rao",
-    role: "Corporate Offsite · Lotus Castle",
+    role: "Corporate Event · IRA",
     quote:
-      "Booked it for a team outing — spacious rooms and a great BBQ setup kept everyone happy.",
+      "Booked it for our annual offsite — spacious lawns and seamless coordination throughout.",
     photo: "/review/3e62508b466da1db86ac9ba0dd940490.jpg",
     x: 350,
     y: -75,
@@ -72,9 +72,9 @@ const TESTIMONIALS: Testimonial[] = [
   {
     id: 5,
     name: "Priya Nair",
-    role: "Weekend with Friends · Lotus Castle",
+    role: "Family Gathering · IRA",
     quote:
-      "Cozy bedrooms, a beautiful pool, and such a peaceful location just outside Hyderabad.",
+      "A peaceful, beautiful setting for our family gathering, just outside the city.",
     photo: "/review/785ca2f82448ff5b842b12e56cc1b393.jpg",
     x: -370,
     y: 80,
@@ -84,9 +84,9 @@ const TESTIMONIALS: Testimonial[] = [
   {
     id: 6,
     name: "Arjun Menon",
-    role: "Family Trip · Lotus Castle",
+    role: "Anniversary Celebration · IRA",
     quote:
-      "Clean, secure, and beautifully maintained. We'll definitely be back for another stay.",
+      "Every detail was thoughtfully done — truly unrestrained, unforgettable, unhurried.",
     photo: "/review/a583c395a9133f31190311989d79caa9.jpg",
     x: -90,
     y: 210,
@@ -96,9 +96,9 @@ const TESTIMONIALS: Testimonial[] = [
   {
     id: 7,
     name: "Divya Prasad",
-    role: "Anniversary Stay · Lotus Castle",
+    role: "Wedding Ceremony · IRA",
     quote:
-      "We celebrated our anniversary here — the bonfire deck at night was absolutely romantic.",
+      "Our mandap looked like something out of a dream. IRA's decor team is incredible.",
     photo: "/review/b6ec85be9c5a41cd707f80aa5995c7b6.jpg",
     x: 170,
     y: 190,
@@ -108,9 +108,9 @@ const TESTIMONIALS: Testimonial[] = [
   {
     id: 8,
     name: "Vikram Shetty",
-    role: "Weekend Retreat · Lotus Castle",
+    role: "Milestone Birthday · IRA",
     quote:
-      "Easy to book, quick replies on WhatsApp, and the farmhouse looked even better in person.",
+      "Easy to plan, quick on WhatsApp, and the venue exceeded every expectation.",
     photo: "/review/e293a27e36a2757509b589c23943616c.jpg",
     x: 390,
     y: 70,

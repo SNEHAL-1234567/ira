@@ -20,42 +20,42 @@ const CARDS = [
   {
     key: "pool",
     title: "Private\nPool",
-    text: "Dive in and unwind by your own private pool.",
-    image: "/lotus-images/lotus-pool-dusk-2.jpg",
+    text: "Relax by the pool, rain or shine.",
+    image: "/ira-images/ira-pool-rain.jpg",
     variant: "framed" as const,
-    toast: "Take a dip — Lotus Castle's private pool is ready for you!",
+    toast: "The pool at IRA is ready whenever you are!",
   },
   {
-    key: "bonfire",
-    title: "Bonfire &\nBBQ Nights",
-    text: "Gather around the fire for a night to remember.",
-    image: "/lotus-images/lotus-pool-dusk-1.jpg",
+    key: "lawns",
+    title: "Event Lawns\nfor 400",
+    text: "Wide open lawns built for grand celebrations.",
+    image: "/ira-images/ira-capacity-400.jpg",
     variant: "overlay" as const,
-    toast: "Planning a bonfire night? We've got you covered!",
+    toast: "Planning something big? We make room for 400!",
   },
   {
-    key: "bedrooms",
-    title: "4 Private\nBedrooms",
-    text: "Spacious rooms for family and friends to relax.",
-    image: "/lotus-images/lotus-exterior-day.jpg",
+    key: "cottage",
+    title: "Thatched\nCottage",
+    text: "Charming farm-style spaces for smaller moments.",
+    image: "/ira-images/ira-thatched-hut.jpg",
     variant: "overlay" as const,
-    toast: "4 comfortable bedrooms await your stay!",
+    toast: "Explore the cottage — a favorite spot at IRA!",
   },
   {
-    key: "garden",
-    title: "Garden &\nLawn",
-    text: "Wide open lawns for games, photos and picnics.",
-    image: "/lotus-images/lotus-pool-day.jpg",
+    key: "decor",
+    title: "Wedding\nDecor",
+    text: "Every detail shaped with finesse, just for you.",
+    image: "/ira-images/ira-decor-finesse.jpg",
     variant: "overlay" as const,
-    toast: "Enjoy the lush garden and lawn at Lotus Castle!",
+    toast: "Let's plan your celebration's decor together!",
   },
 ];
 
 const EMOJI: Record<string, string> = {
   pool: "🏊",
-  bonfire: "🔥",
-  bedrooms: "🛏️",
-  garden: "🌿",
+  lawns: "🌾",
+  cottage: "🏡",
+  decor: "💐",
 };
 
 function ArrowCircle({ tone }: { tone: "gold" | "white" }) {
@@ -208,9 +208,9 @@ export default function ExploreEscape() {
             }
 
             const spanClass =
-              card.key === "water"
+              card.key === "lawns"
                 ? "md:col-start-2 md:row-span-2"
-                : card.key === "cultural"
+                : card.key === "cottage"
                 ? "md:col-start-3 md:row-start-1"
                 : "md:col-start-3 md:row-start-2";
 

@@ -11,19 +11,19 @@ import TiltCard from "@/components/ui/tilt-card";
 const ACCORDION_ITEMS = [
   {
     title: "Enquire & Check Availability",
-    body: "Message or call us with your preferred dates and group size, and we'll confirm availability at Lotus Castle right away.",
+    body: "Message or call us with your event date and guest count, and we'll confirm availability at IRA right away.",
   },
   {
     title: "Choose Your Package",
-    body: "Pick a full-day visit, an overnight stay, or a custom event package — we'll tailor it to your celebration.",
+    body: "Pick a day event, an overnight stay, a full weekend, or a wedding package — we'll tailor it to your celebration.",
   },
   {
     title: "Confirm & Pay",
     body: "Once confirmed, we share simple payment details to lock in your booking. No hidden fees, no fuss.",
   },
   {
-    title: "Arrive & Enjoy",
-    body: "Arrive and relax — the pool, bonfire, kitchen, and games are all ready for you and your group from the moment you walk in.",
+    title: "Arrive & Celebrate",
+    body: "Arrive and celebrate — the pool, lawns, cottage, and decor spaces are all ready for your big day from the moment you walk in.",
   },
 ];
 
@@ -58,8 +58,8 @@ export default function LetsDrive() {
 
   const handleEnquire = () => {
     window.open(
-      "https://wa.me/919160037604?text=" +
-        encodeURIComponent("Hi! I'd like to check availability at Lotus Castle."),
+      "https://wa.me/919347567338?text=" +
+        encodeURIComponent("Hi! I'd like to check availability at IRA Luxury Farmstay."),
       "_blank"
     );
   };
@@ -82,7 +82,7 @@ export default function LetsDrive() {
               How It Works
             </p>
             <h2 className="mt-3 font-display text-2xl font-bold leading-[1.05] md:text-4xl lg:text-5xl">
-              Let&apos;s plan your getaway
+              Let&apos;s plan your celebration
             </h2>
           </Reveal>
           <MagneticButton
@@ -106,15 +106,15 @@ export default function LetsDrive() {
           <div ref={imageCardRef}>
             <TiltCard className="group relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] md:rounded-[2rem]">
               <Image
-                src="/lotus-images/lotus-aerial-dusk.jpg"
-                alt="Aerial view of Lotus Castle farmhouse at dusk"
+                src="/ira-images/ira-aerial.jpg"
+                alt="Aerial view of IRA Luxury Farmstay"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute left-4 top-4 flex items-center gap-2 rounded-full bg-white/90 px-3 py-1.5 text-xs font-medium backdrop-blur md:left-5 md:top-5 md:px-4 md:py-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-accent-green" />
-                Farmhouse
+                Farmstay
               </div>
 
               <button
@@ -133,9 +133,8 @@ export default function LetsDrive() {
                   Step 01 of 4
                 </p>
                 <p className="mt-1 text-xs leading-relaxed text-white/85 md:text-sm">
-                  Message or call us with your preferred dates and group
-                  size, and we&apos;ll confirm availability at Lotus Castle
-                  right away.
+                  Message or call us with your event date and guest count,
+                  and we&apos;ll confirm availability at IRA right away.
                 </p>
               </div>
             </TiltCard>
@@ -205,7 +204,7 @@ export default function LetsDrive() {
                 </svg>
               </div>
               <p className="text-center text-sm text-white/70">
-                A video tour of Lotus Castle is coming soon.
+                A video tour of IRA Luxury Farmstay is coming soon.
                 <br />
                 <span className="text-accent-green">Stay tuned!</span>
               </p>

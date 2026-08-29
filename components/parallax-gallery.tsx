@@ -6,18 +6,18 @@ import Image from "next/image";
 import { gsap } from "@/lib/gsap-config";
 
 const IMAGES = [
-  "/lotus-images/lotus-pool-dusk-1.jpg",
-  "/lotus-images/lotus-pool-dusk-2.jpg",
-  "/lotus-images/lotus-pool-day.jpg",
-  "/lotus-images/lotus-aerial-dusk.jpg",
-  "/lotus-images/lotus-aerial-tilt.jpg",
-  "/lotus-images/lotus-exterior-day.jpg",
-  "/lotus-images/lotus-pool-dusk-1.jpg",
-  "/lotus-images/lotus-pool-dusk-2.jpg",
-  "/lotus-images/lotus-pool-day.jpg",
-  "/lotus-images/lotus-aerial-dusk.jpg",
-  "/lotus-images/lotus-aerial-tilt.jpg",
-  "/lotus-images/lotus-exterior-day.jpg",
+  "/ira-images/ira-aerial.jpg",
+  "/ira-images/ira-exterior-day.jpg",
+  "/ira-images/ira-pool-rain.jpg",
+  "/ira-images/ira-scenery-trees.jpg",
+  "/ira-images/ira-thatched-hut.jpg",
+  "/ira-images/ira-celebration-toast.jpg",
+  "/ira-images/ira-couple-sunset.jpg",
+  "/ira-images/ira-decor-forever.jpg",
+  "/ira-images/ira-decor-finesse.jpg",
+  "/ira-images/ira-capacity-400.jpg",
+  "/ira-images/ira-aerial.jpg",
+  "/ira-images/ira-exterior-day.jpg",
 ];
 
 export default function ParallaxGallery() {
@@ -76,7 +76,7 @@ export default function ParallaxGallery() {
       <div className="flex h-[40vh] items-center justify-center md:h-[60vh]">
         <div className="grid content-start justify-items-center gap-3 px-6 text-center md:gap-4">
           <h2 className="font-display text-2xl font-bold md:text-5xl">
-            Moments at Lotus Castle
+            Moments at IRA
           </h2>
         </div>
       </div>
@@ -115,7 +115,7 @@ export default function ParallaxGallery() {
 
       <div className="flex h-[25vh] flex-col items-center justify-center gap-5 md:h-[40vh]">
         <p className="font-display text-xl font-bold text-text-primary md:text-3xl">
-          Book your stay at Lotus Castle
+          Book your celebration at IRA
         </p>
         <button
           onClick={() => {

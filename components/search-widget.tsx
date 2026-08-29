@@ -8,8 +8,8 @@ import MagneticButton from "@/components/ui/magnetic-button";
 import { useToast } from "@/components/ui/toast";
 import clsx from "clsx";
 
-const RESIDENCE_TABS = ["Full Day", "Overnight", "Weekend", "Custom Event"];
-const FILTER_CHIPS = ["Family", "Friends", "Birthday", "Corporate"];
+const RESIDENCE_TABS = ["Day Event", "Overnight Stay", "Full Weekend", "Wedding"];
+const FILTER_CHIPS = ["Wedding", "Birthday", "Family", "Corporate"];
 
 export default function SearchWidget({
   progressRef,
@@ -100,7 +100,7 @@ export default function SearchWidget({
       return;
     }
     const lines = [
-      `Hi! I'd like to check availability at Lotus Castle.`,
+      `Hi! I'd like to check availability at IRA Luxury Farmstay.`,
       `Name: ${name}`,
       `Booking type: ${RESIDENCE_TABS[activeTab]}`,
       `Occasion: ${FILTER_CHIPS[activeChip]}`,
@@ -109,7 +109,7 @@ export default function SearchWidget({
       guests && `Guests: ${guests}`,
     ].filter(Boolean);
     window.open(
-      `https://wa.me/919160037604?text=${encodeURIComponent(lines.join("\n"))}`,
+      `https://wa.me/919347567338?text=${encodeURIComponent(lines.join("\n"))}`,
       "_blank"
     );
     showToast("Opening WhatsApp to confirm your availability…", "success", "🔍");
@@ -117,8 +117,8 @@ export default function SearchWidget({
 
   const handleCompactCheck = () => {
     window.open(
-      "https://wa.me/919160037604?text=" +
-        encodeURIComponent("Hi! I'd like to check availability at Lotus Castle."),
+      "https://wa.me/919347567338?text=" +
+        encodeURIComponent("Hi! I'd like to check availability at IRA Luxury Farmstay."),
       "_blank"
     );
   };

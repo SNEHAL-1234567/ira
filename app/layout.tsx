@@ -18,9 +18,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Lotus Castle — Luxury Farmhouse & Weekend Retreat in Moinabad, Hyderabad",
+  title: "IRA Luxury Farmstay — Weddings, Celebrations & Farm Stays in Chevella",
   description:
-    "A private luxury farmhouse in Moinabad, Hyderabad with a pool, bonfire deck, indoor games and 4 bedrooms — the perfect weekend retreat with friends and family.",
+    "Unrestrained, unforgettable, unhurried — IRA Luxury Farmstay in Chevella offers thoughtfully designed spaces for weddings, family gatherings and celebrations of every kind, with room for up to 400 guests.",
 };
 
 export default function RootLayout({

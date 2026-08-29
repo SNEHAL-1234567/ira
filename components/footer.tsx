@@ -11,7 +11,7 @@ const LINK_COLUMNS = [
   },
   {
     title: "Explore",
-    links: ["Private Pool", "Bonfire Deck", "Indoor Games", "Garden & BBQ"],
+    links: ["Event Lawns", "Thatched Cottage", "Private Pool", "Wedding Decor"],
   },
   {
     title: "Support",
@@ -93,14 +93,14 @@ export default function Footer() {
 
   const handleSocialClick = (social: { name: string; emoji: string }) => {
     if (social.name === "Instagram") {
-      window.open("https://www.instagram.com/lotuscastle9", "_blank");
+      window.open("https://www.instagram.com/irafarmstay", "_blank");
       return;
     }
     showToast(`${social.name} page coming soon`, "info", social.emoji);
   };
 
   const handleDestinationClick = (feature: string) => {
-    showToast(`Ask us about ${feature} — call 9160037604`, "info", "🏡");
+    showToast(`Ask us about ${feature} — call 9347567338`, "info", "🏡");
   };
 
   return (
@@ -134,14 +134,16 @@ export default function Footer() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <span className="font-display text-xl font-bold">Lotus Castle</span>
+              <span className="font-display text-xl font-bold">IRA</span>
             </button>
             <p className="mt-4 max-w-xs text-sm font-bold leading-relaxed text-text-primary">
-              A private luxury farmhouse in Moinabad, Hyderabad — your
-              weekend retreat with pool, bonfire and garden.
+              A luxury farmstay in Chevella — thoughtfully designed spaces
+              for weddings, celebrations and every milestone in between.
             </p>
             <p className="mt-3 text-sm font-bold text-text-primary">
-              📞 <a href="tel:+919160037604" className="hover:opacity-70">9160037604</a>
+              📞 <a href="tel:+919347567338" className="hover:opacity-70">9347567338</a>
+              {" · "}
+              <a href="tel:+917799110962" className="hover:opacity-70">7799110962</a>
             </p>
           </div>
 
@@ -176,7 +178,7 @@ export default function Footer() {
               Stay Updated
             </h4>
             <p className="mt-3 text-sm font-bold text-text-primary md:mt-4">
-              Subscribe for offers and updates from Lotus Castle.
+              Subscribe for offers and updates from IRA.
             </p>
             <form
               onSubmit={handleSubscribe}
@@ -201,7 +203,7 @@ export default function Footer() {
 
         <div className="mt-auto flex flex-col items-center justify-between gap-4 pt-6 md:flex-row md:pt-8">
           <p className="text-xs font-bold text-text-primary">
-            © 2026 Lotus Castle. All rights reserved.
+            © 2026 IRA Luxury Farmstay. All rights reserved.
           </p>
           <div className="flex items-center gap-3">
             {SOCIALS.map((social) => (
