@@ -26,8 +26,7 @@ export default function HeroScrollCanvas({
 
     let cancelled = false;
 
-    // Draws a single frame into the canvas at full opacity (cover-fit), without clearing first
-    const drawLayer = (img: HTMLImageElement, alpha: number) => {
+    const draw = (img: HTMLImageElement) => {
       const { width, height } = canvas;
       if (!width || !height || !img.naturalWidth) return;
       const imgRatio = img.naturalWidth / img.naturalHeight;
@@ -47,21 +46,9 @@ export default function HeroScrollCanvas({
         offsetX = (width - drawWidth) / 2;
       }
 
-      ctx.globalAlpha = alpha;
-      ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
-      ctx.globalAlpha = 1;
-    };
-
-    // Cross-fades between two adjacent frames so fast scrolling doesn't look like a hard jump
-    const drawBlended = (imgA: HTMLImageElement | undefined, imgB: HTMLImageElement | undefined, mix: number) => {
-      const { width, height } = canvas;
-      if (!width || !height) return;
       ctx.clearRect(0, 0, width, height);
-      if (imgA?.complete && imgA.naturalWidth) drawLayer(imgA, 1);
-      if (mix > 0.01 && imgB?.complete && imgB.naturalWidth) drawLayer(imgB, mix);
+      ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
     };
-
-    const draw = (img: HTMLImageElement) => drawBlended(img, undefined, 0);
 
     const resize = () => {
       const rect = canvas.getBoundingClientRect();
@@ -120,9 +107,10 @@ export default function HeroScrollCanvas({
 
     const tick = () => {
       const progress = Math.min(Math.max(progressRef.current, 0), 1);
-      const exact = progress * (FRAME_COUNT - 1);
-      const frameIndex = Math.min(FRAME_COUNT - 1, Math.floor(exact));
-      const mix = exact - frameIndex;
+      const frameIndex = Math.min(
+        FRAME_COUNT - 1,
+        Math.floor(progress * (FRAME_COUNT - 1))
+      );
 
       if (frameIndex !== currentFrameRef.current) {
         currentFrameRef.current = frameIndex;
@@ -130,7 +118,7 @@ export default function HeroScrollCanvas({
 
       const img = images[frameIndex];
       if (img?.complete && img.naturalWidth) {
-        drawBlended(img, images[frameIndex + 1], mix);
+        draw(img);
       } else {
         // Fall back to nearest loaded frame
         for (let offset = 1; offset < 20; offset++) {
